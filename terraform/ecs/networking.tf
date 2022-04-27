@@ -16,9 +16,9 @@ resource "aws_internet_gateway" "internet_gateway" {
 resource "aws_subnet" "pub_subnet_a" {
   vpc_id            = aws_vpc.vpc.id
   cidr_block        = "10.0.0.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-southeast-1a"
   tags = {
-    Name  = "subnet-east1-a",
+    Name  = "subnet-southeast-1a",
     team  = "DevRel Marketing",
     owner = "Angel Rivera",
   }
@@ -27,10 +27,10 @@ resource "aws_subnet" "pub_subnet_a" {
 resource "aws_subnet" "pub_subnet_b" {
   vpc_id            = aws_vpc.vpc.id
   cidr_block        = "10.0.1.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-southeast-1b"
 
   tags = {
-    Name  = "subnet-east1-b",
+    Name  = "subnet-southeast-1b",
     team  = "DevRel Marketing",
     owner = "Angel Rivera"
   }
