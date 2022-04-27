@@ -16,7 +16,7 @@ variable "key_pair" {
 
 variable "ami" {
   description = "Amazon Linux 2 AMI"
-  default     = "ami-049f20cccc294bb90"
+  default     = "ami-0cc8dc7a69cd8b547"
 }
 
 variable "instance_type" {
