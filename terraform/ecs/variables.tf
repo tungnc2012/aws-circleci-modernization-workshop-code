@@ -11,7 +11,7 @@ variable "availability_zones" {
 
 variable "key_pair" {
   description = "AWS EC2 Key Pair Pem"
-  default     = "ee-default-keypair"
+  default     = "tomcat.pem"
 }
 
 variable "ami" {
