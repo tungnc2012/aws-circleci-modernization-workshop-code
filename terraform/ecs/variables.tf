@@ -2,10 +2,10 @@ variable "availability_zones" {
   type        = list(string)
   description = "AWS Availability Zones"
   default = [
-    "us-east-1a",
-    "us-east-1b",
-    "us-east-1c",
-    "us-east-1e",
+    "ap-southeast-1a",
+    "ap-southeast-1b",
+    "ap-southeast-1c",
+    "",
   ]
 }
 
@@ -16,7 +16,7 @@ variable "key_pair" {
 
 variable "ami" {
   description = "Amazon Linux 2 AMI"
-  default     = "ami-0c3dda3deab25a563"
+  default     = "ami-049f20cccc294bb90"
 }
 
 variable "instance_type" {
